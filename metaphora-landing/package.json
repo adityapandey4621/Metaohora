@@ -1,0 +1,42 @@
+{
+  "name": "poetsoul-backend",
+  "version": "1.0.0",
+  "description": "Backend for PoetSoul poetry sharing platform",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cross-env PORT=5003 nodemon server.js",
+    "frontend": "next dev",
+    "build": "next build",
+    "start": "concurrently \"npm run backend:start\" \"npm run frontend:start\"",
+    "backend:start": "cross-env PORT=5003 node server.js",
+    "frontend:start": "next start"
+  },
+  "dependencies": {
+    "@radix-ui/react-label": "^2.1.7",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@tailwindcss/postcss": "^4.1.11",
+    "autoprefixer": "^10.4.21",
+    "bcryptjs": "^2.4.3",
+    "class-variance-authority": "^0.7.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.536.0",
+    "mongodb": "^6.18.0",
+    "mongoose": "^8.17.0",
+    "next": "^15.4.5",
+    "openai": "^4.20.0",
+    "postcss": "^8.5.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
