@@ -1,0 +1,12 @@
+{
+  "apps": [
+    {
+      "name": "backend",
+      "command": "PORT=5002 nodemon server.js"
+    },
+    {
+      "name": "frontend",
+      "command": "next dev"
+    }
+  ]
+}
